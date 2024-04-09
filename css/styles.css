@@ -11,6 +11,13 @@
     --Grayish-Blue: hsl(246, 25%, 77%);
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .flex {
     display: flex;
@@ -22,11 +29,24 @@
 
 .absolute {
     position: absolute;
+    right: 1rem;
+    top: 0.8rem;
 }
 
 body {
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: var(--Red);
+    background-image: url('../images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 85%;
 }
 
 #left-container,
@@ -40,16 +60,65 @@ body {
 }
 
 .card {
-    border: 1px solid black;
-    border-radius: 15px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     text-align: center;
+}
+
+#banner {
+    background-color: var(--Blue);
+    padding: 1rem 0;
+}
+
+#form-card {
+    background-color: white;
+    color: var(--Dark-Blue);
+    padding: 2rem;
+    margin-top: 1.5rem;
 }
 
 .input-container {
     text-align: end;
+    margin-bottom: 1rem;
+}
+
+.error {
+    color: var(--Red);
+    font-style: italic;
+    margin-top: 0.5rem;
 }
 
 input,
 button {
     width: 100%;
+}
+
+input {
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: var(--Green);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#terms-conditions {
+    color: var(--Grayish-Blue);
+}
+
+#terms-conditions a {
+    color: var(--Red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
