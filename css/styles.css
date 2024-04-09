@@ -1,0 +1,55 @@
+:root {
+    /* ### Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+
+    /* ### Accent */
+    --Blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+#left-container,
+#right-container {
+    width: 50%;
+}
+
+#left-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.input-container {
+    text-align: end;
+}
+
+input,
+button {
+    width: 100%;
+}
