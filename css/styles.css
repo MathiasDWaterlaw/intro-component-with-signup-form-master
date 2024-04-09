@@ -2,6 +2,7 @@
     /* ### Primary */
     --Red: hsl(0, 100%, 74%);
     --Green: hsl(154, 59%, 51%);
+    --transparent-green: hsla(154, 59%, 51%, 0.7);
 
     /* ### Accent */
     --Blue: hsl(248, 32%, 49%);
@@ -9,6 +10,7 @@
     /* ### Neutral */
     --Dark-Blue: hsl(249, 10%, 26%);
     --Grayish-Blue: hsl(246, 25%, 77%);
+    --tranparent-shadow: hsla(0, 0%, 0%, 0.15);
 }
 
 *,
@@ -29,8 +31,8 @@
 
 .absolute {
     position: absolute;
-    right: 1rem;
-    top: 0.8rem;
+    right: 1.8rem;
+    top: 1rem;
 }
 
 body {
@@ -42,16 +44,33 @@ body {
     background-image: url('../images/bg-intro-desktop.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: 1rem;
     font-family: 'Poppins', sans-serif;
 }
 
 main {
-    width: 85%;
+    width: 70rem;
 }
 
 #left-container,
 #right-container {
     width: 50%;
+}
+
+header {
+    margin-left: 0.3rem;
+}
+
+#left-container header h1 {
+    font-size: 3.08rem;
+    line-height: 3.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+#left-container header p {
+    color: whitesmoke;
+    line-height: 1.5rem;
 }
 
 #left-container {
@@ -63,60 +82,95 @@ main {
     /* border: 1px solid black; */
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 8px 0 0 var(--tranparent-shadow);
 }
 
 #banner {
     background-color: var(--Blue);
-    padding: 1rem 0;
+    padding: 1.15rem 0;
+    margin-left: 0.9rem;
+    margin-right: 0.3rem;
+    color: whitesmoke;
+}
+
+#banner p {
+    font-size: 0.95rem;
 }
 
 #form-card {
     background-color: white;
     color: var(--Dark-Blue);
-    padding: 2rem;
-    margin-top: 1.5rem;
+    padding: 2.5rem;
+    margin: 1.5rem 0.3rem 0 0.9rem;
+    /* margin-top: 1.5rem;
+    margin-left: 1rem; */
 }
 
 .input-container {
     text-align: end;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .error {
     color: var(--Red);
     font-style: italic;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
+    font-weight: 600;
+    font-size: 0.7rem;
 }
 
 input,
 button {
     width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 input {
     border: 1px solid var(--Grayish-Blue);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1rem 1.8rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--Dark-Blue);
+}
+
+input:focus {
+    outline: 1px solid var(--Dark-Blue);
 }
 
 button {
     text-transform: uppercase;
     background-color: var(--Green);
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.1rem;
+    margin-bottom: 0.9rem;
     border: none;
     border-radius: 5px;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.09rem;
+    box-shadow: inset 0 -3px 0 1px var(--tranparent-shadow);
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: var(--transparent-green);
 }
 
 #terms-conditions {
     color: var(--Grayish-Blue);
+    font-size: 0.68rem;
 }
 
 #terms-conditions a {
     color: var(--Red);
     font-weight: 700;
     text-decoration: none;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .hidden {
