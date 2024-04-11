@@ -3,6 +3,7 @@
     --Red: hsl(0, 100%, 74%);
     --Green: hsl(154, 59%, 51%);
     --transparent-green: hsla(154, 59%, 51%, 0.7);
+    --transparent-red: hsla(0, 100%, 75%, 0.5);
 
     /* ### Accent */
     --Blue: hsl(248, 32%, 49%);
@@ -43,8 +44,8 @@ body {
     background-color: var(--Red);
     background-image: url('../images/bg-intro-desktop.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 1rem;
+    background-size: 98%;
+    background-position: 50%;
     font-family: 'Poppins', sans-serif;
 }
 

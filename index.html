@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js" defer></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -39,29 +40,29 @@
 
       <div id="form-card" class="card">
 
-        <form action="#" method="post" target="_blank">
+        <form action="#" method="post" target="_blank" id="form" novalidate>
           <div class="input-container relative">
             <input type="text" placeholder="First Name" id="first-name">
-            <i class="icon absolute hidden"><img src="./images/icon-error.svg" alt="error icon"></i>
-            <p class="error hidden">First Name cannot be empty</p>
+            <i class="icon absolute hidden" id="first-name-icon"><img src="./images/icon-error.svg" alt="error icon"></i>
+            <p class="error hidden" id="first-name-errorMsg">First Name cannot be empty</p>
           </div>
 
           <div class="input-container relative">
             <input type="text" placeholder="Last Name" id="last-name">
-            <i class="icon absolute hidden"><img src="./images/icon-error.svg" alt="error icon"></i>
-            <p class="error hidden">Last Name cannot be empty</p>
+            <i class="icon absolute hidden" id="last-name-icon"><img src="./images/icon-error.svg" alt="error icon"></i>
+            <p class="error hidden" id="last-name-errorMsg">Last Name cannot be empty</p>
           </div>
 
           <div class="input-container relative">
             <input type="email" placeholder="Email Address" id="email">
-            <i class="icon absolute hidden"><img src="./images/icon-error.svg" alt="error icon"></i>
-            <p class="error hidden">Looks like this is not an email</p>
+            <i class="icon absolute hidden" id="email-icon"><img src="./images/icon-error.svg" alt="error icon"></i>
+            <p class="error hidden" id="email-errorMsg">Looks like this is not an email</p>
           </div>
 
           <div class="input-container relative">
             <input type="password" placeholder="Password" id="password" autocomplete="new-password">
-            <i class="icon absolute hidden"><img src="./images/icon-error.svg" alt="error icon"></i>
-            <p class="error hidden">Password cannot be empty</p>
+            <i class="icon absolute hidden" id="password-icon"><img src="./images/icon-error.svg" alt="error icon"></i>
+            <p class="error hidden" id="password-errorMsg">Password cannot be empty</p>
           </div>
 
           <button type="submit" class="btn" id="submit-btn">Claim your free trial</button>
