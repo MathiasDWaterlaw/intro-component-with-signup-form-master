@@ -209,3 +209,47 @@ button:active {
         margin: 1.5rem 0;
     }
 }
+
+@media (width <= 480px) {
+
+    body {
+        background-image: url('../images/bg-intro-mobile.png');
+        background-size: cover;
+    }
+    
+    header {
+        max-width: 325px;
+        margin-bottom: 4rem;
+    }
+
+    #left-container header h1 {
+        font-size: 1.85rem;
+        line-height: 2.2rem;
+    }
+
+    #left-container header p {
+        line-height: 1.7rem;
+    }
+
+    #right-container {
+        padding: 0;
+    }
+
+    .card {
+        max-width: 325px;
+    }
+
+    #banner {
+        margin: 0 auto;
+        padding: 1.4rem 3rem;
+    }
+
+    #form-card {
+        padding: 1.5rem;
+        margin: 1.5rem auto 0 auto;
+    }
+
+    .input-container {
+        margin-bottom: 1rem;
+    }
+}
