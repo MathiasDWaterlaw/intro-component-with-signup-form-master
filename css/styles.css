@@ -46,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-size: 98%;
     background-position: 50%;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -215,6 +216,7 @@ button:active {
     body {
         background-image: url('../images/bg-intro-mobile.png');
         background-size: cover;
+        background-attachment: fixed;
     }
     
     header {
